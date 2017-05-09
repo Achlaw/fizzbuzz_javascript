@@ -23,22 +23,20 @@ Fizzbuzz.prototype.isDivisibleByFive = function (number) {
   return this._isDivisibleBy(number, 5);
 };
 
-
-Fizzbuzz.prototype.isDivisibleByFifteen = function(number) {
+Fizzbuzz.prototype.isDivisibleByFifteen = function (number) {
   return this._isDivisibleBy(number, 15);
 };
 
-Fizzbuzz.prototype.says = function(number) {
+
+Fizzbuzz.prototype.says = function (number) {
+  if (this.isDivisibleByFifteen(number)) {
+    return "Fizzbuzz";
+  }
   if (this.isDivisibleByThree(number)) {
     return "Fizz";
   }
-  else if (this.isDivisibleByFive(number)) {
+  if (this.isDivisibleByFive(number)) {
     return "Buzz";
   }
+  return number;
 };
-//
-// Fizzbuzz.prototype.says = function(number) {
-//   if (this.isDivisibleByFive(number)) {
-//     return "Buzz";
-//   }
-// };

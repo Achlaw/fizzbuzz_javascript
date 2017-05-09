@@ -48,6 +48,10 @@ describe('Fizzbuzz', function() {
       expect(fizzbuzz.says(5)).toEqual("Buzz");
     });
 
+    it('"Fizzbuzz" when a number is divisible by 3 and 5', function() {
+      expect(fizzbuzz.says(15)).toEqual("Fizzbuzz");
+    });
+
   });
 
 });
