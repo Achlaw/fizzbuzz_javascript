@@ -20,6 +20,10 @@ describe('Fizzbuzz', function() {
       expect(fizzbuzz.isDivisibleByThree(1)).toBe(false);
     });
 
+    it('divisible by 5', function() {
+      expect(fizzbuzz.isDivisibleByFive(1)).toBe(false);
+    });
+
   });
 
 });
